@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenities | Kedar Jan Camps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 text-slate-100">
+
+    <nav class="fixed w-full z-50 bg-slate-950/95 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:h-24 flex flex-col sm:flex-row justify-between items-center py-2 sm:py-0">
+            <div class="flex items-center space-x-2 cursor-pointer" onclick="location.href='index.html'">
+                <i data-lucide="mountain" class="w-8 h-8 gold-text"></i>
+                <span class="font-cinzel text-xl font-bold tracking-widest uppercase">KEDAR JAN <span class="gold-text">CAMPS</span></span>
+            </div>
+            <div class="flex items-center space-x-4 sm:space-x-8">
+                <a href="index.html" class="nav-link text-sm font-semibold uppercase tracking-wider">Home</a>
+                <a href="amenities.html" class="nav-link text-sm font-semibold uppercase tracking-wider active">Amenities</a>
+                <a href="photos.html" class="nav-link text-sm font-semibold uppercase tracking-wider">Photos</a>
+                <a href="booking.html" class="nav-link text-sm font-semibold uppercase tracking-wider gold-btn-nav px-3 py-1">Book Stay</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 px-4 bg-slate-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="font-cinzel text-4xl sm:text-6xl font-bold mb-4">Premium <span class="gold-text">Comfort</span></h2>
+            <div class="w-24 h-1 gold-bg mx-auto mb-16"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-10 rounded-3xl border-b-4 border-gold/20">
+                    <i data-lucide="waves" class="gold-text w-12 h-12 mb-6 mx-auto"></i>
+                    <h3 class="font-cinzel text-2xl font-bold mb-4">Hot Water</h3>
+                    <p class="text-slate-400">24/7 Hot water availability to refresh you after the long mountain trek.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl border-b-4 border-gold/20">
+                    <i data-lucide="bath" class="gold-text w-12 h-12 mb-6 mx-auto"></i>
+                    <h3 class="font-cinzel text-2xl font-bold mb-4">Private Washrooms</h3>
+                    <p class="text-slate-400">Attached, clean, and hygienic washroom facilities for your privacy.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl border-b-4 border-gold/20">
+                    <i data-lucide="shield-plus" class="gold-text w-12 h-12 mb-6 mx-auto"></i>
+                    <h3 class="font-cinzel text-2xl font-bold mb-4">High Quality Blankets</h3>
+                    <p class="text-slate-400">Ultra-warm thermal blankets to protect you from Kedarnath's sub-zero nights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-white/5 py-12 text-center">
+        <p class="text-xs text-slate-600">© 2024 Kedar Jan Camps. Situated at 3,583m.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

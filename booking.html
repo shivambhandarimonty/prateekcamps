@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Kedar Jan Camps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 text-slate-100">
+
+    <nav class="fixed w-full z-50 bg-slate-950/95 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:h-24 flex flex-col sm:flex-row justify-between items-center py-2 sm:py-0">
+            <div class="flex items-center space-x-2 cursor-pointer" onclick="location.href='index.html'">
+                <i data-lucide="mountain" class="w-8 h-8 gold-text"></i>
+                <span class="font-cinzel text-xl font-bold tracking-widest uppercase">KEDAR JAN <span class="gold-text">CAMPS</span></span>
+            </div>
+            <div class="flex items-center space-x-4 sm:space-x-8">
+                <a href="index.html" class="nav-link text-sm font-semibold uppercase tracking-wider">Home</a>
+                <a href="amenities.html" class="nav-link text-sm font-semibold uppercase tracking-wider">Amenities</a>
+                <a href="photos.html" class="nav-link text-sm font-semibold uppercase tracking-wider">Photos</a>
+                <a href="booking.html" class="nav-link text-sm font-semibold uppercase tracking-wider active gold-btn-nav px-3 py-1">Book Stay</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 px-4">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="font-cinzel text-4xl font-bold mb-8">Secure Your <span class="gold-text">Stay</span></h2>
+            
+            <div class="glass-card p-8 rounded-3xl border-t-4 border-gold text-left">
+                <form id="bookingForm" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-slate-400">Full Name</label>
+                        <input type="text" id="name" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:border-gold outline-none">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-slate-400">Phone</label>
+                            <input type="tel" id="mobile" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:border-gold outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-slate-400">Date</label>
+                            <input type="date" id="date" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:border-gold outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-slate-400">Email Address</label>
+                        <input type="email" id="email" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:border-gold outline-none">
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 py-4 rounded-xl font-bold flex items-center justify-center">
+                        <i data-lucide="send" class="mr-2 w-5 h-5"></i> Confirm on WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

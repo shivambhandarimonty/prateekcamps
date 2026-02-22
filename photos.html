@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Kedar Jan Camps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 text-slate-100">
+
+    
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/917300659187?text=Namaste!%20I%20have%20an%20inquiry%20about%20staying%20at%20Kedar%20Jan%20Camps." 
+       target="_blank" class="whatsapp-float fixed bottom-6 right-6 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <nav class="fixed w-full z-50 bg-slate-950/95 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:h-24 flex flex-col sm:flex-row justify-between items-center py-2 sm:py-0">
+            <div class="flex items-center space-x-2 cursor-pointer" onclick="location.href='index.html'">
+                <i data-lucide="mountain" class="w-8 h-8 gold-text"></i>
+                <span class="font-cinzel text-xl font-bold tracking-widest uppercase">KEDAR JAN <span class="gold-text">CAMPS</span></span>
+            </div>
+            <div class="flex items-center space-x-4 sm:space-x-8">
+                <a href="index.html" class="nav-link text-sm font-semibold uppercase tracking-wider">Home</a>
+                <a href="amenities.html" class="nav-link text-sm font-semibold uppercase tracking-wider">Amenities</a>
+                <a href="photos.html" class="nav-link text-sm font-semibold uppercase tracking-wider active">Photos</a>
+                <a href="booking.html" class="nav-link text-sm font-semibold uppercase tracking-wider gold-btn-nav px-3 py-1">Book Stay</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="font-cinzel text-4xl sm:text-6xl font-bold mb-4">Camp <span class="gold-text">Views</span></h2>
+            <div class="w-24 h-1 gold-bg mx-auto mb-16"></div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="aspect-square overflow-hidden rounded-2xl border border-white/5 group">
+                    <img src="https://images.unsplash.com/photo-1533512373023-95801c40f585?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-2xl border border-white/5 group">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-2xl border border-white/5 group">
+                    <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
